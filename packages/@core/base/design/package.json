@@ -1,0 +1,41 @@
+{
+  "name": "@ittlr-core/design",
+  "version": "5.5.2",
+  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "packages/@ittlr-core/base/design"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "exports": {
+    "./bem": {
+      "development": "./src/scss-bem/bem.scss",
+      "default": "./dist/bem.scss"
+    },
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./dist/design.css"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "default": "./dist/index.mjs"
+      }
+    }
+  }
+}

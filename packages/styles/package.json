@@ -1,0 +1,31 @@
+{
+  "name": "@ittlr/styles",
+  "version": "5.5.2",
+  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "packages/styles"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    },
+    "./antd": {
+      "default": "./src/antd/index.css"
+    },
+    "./ele": {
+      "default": "./src/ele/index.css"
+    },
+    "./global": {
+      "default": "./src/global/index.scss"
+    }
+  },
+  "dependencies": {
+    "@ittlr-core/design": "workspace:*"
+  }
+}

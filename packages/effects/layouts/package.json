@@ -1,0 +1,43 @@
+{
+  "name": "@ittlr/layouts",
+  "version": "5.5.2",
+  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "packages/effects/layouts"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@ittlr-core/composables": "workspace:*",
+    "@ittlr-core/form-ui": "workspace:*",
+    "@ittlr-core/layout-ui": "workspace:*",
+    "@ittlr-core/menu-ui": "workspace:*",
+    "@ittlr-core/popup-ui": "workspace:*",
+    "@ittlr-core/shadcn-ui": "workspace:*",
+    "@ittlr-core/shared": "workspace:*",
+    "@ittlr-core/tabs-ui": "workspace:*",
+    "@ittlr/constants": "workspace:*",
+    "@ittlr/hooks": "workspace:*",
+    "@ittlr/icons": "workspace:*",
+    "@ittlr/locales": "workspace:*",
+    "@ittlr/preferences": "workspace:*",
+    "@ittlr/stores": "workspace:*",
+    "@ittlr/types": "workspace:*",
+    "@ittlr/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}

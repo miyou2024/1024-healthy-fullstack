@@ -1,0 +1,41 @@
+{
+  "name": "@ittlr/common-ui",
+  "version": "5.5.2",
+  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "packages/effects/common-ui"
+  },
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "@ittlr-core/form-ui": "workspace:*",
+    "@ittlr-core/popup-ui": "workspace:*",
+    "@ittlr-core/shadcn-ui": "workspace:*",
+    "@ittlr-core/shared": "workspace:*",
+    "@ittlr/constants": "workspace:*",
+    "@ittlr/hooks": "workspace:*",
+    "@ittlr/icons": "workspace:*",
+    "@ittlr/locales": "workspace:*",
+    "@ittlr/types": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "@vueuse/integrations": "catalog:",
+    "qrcode": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  },
+  "devDependencies": {
+    "@types/qrcode": "catalog:"
+  }
+}

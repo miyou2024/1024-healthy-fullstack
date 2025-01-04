@@ -1,0 +1,25 @@
+{
+  "name": "@ittlr/tsconfig",
+  "version": "5.5.2",
+  "private": true,
+  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "internal/tsconfig"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web.json"
+  ],
+  "dependencies": {
+    "@ittlr/types": "workspace:*",
+    "vite": "catalog:"
+  }
+}

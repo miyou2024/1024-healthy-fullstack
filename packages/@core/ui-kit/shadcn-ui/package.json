@@ -1,0 +1,54 @@
+{
+  "name": "@ittlr-core/shadcn-ui",
+  "version": "5.5.2",
+  "#main": "./dist/index.mjs",
+  "#module": "./dist/index.mjs",
+  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "packages/@ittlr-core/uikit/shadcn-ui"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "#build": "pnpm unbuild",
+    "#prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "main": "./src/index.ts",
+  "module": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "development": "./src/index.ts",
+      "default": "./src/index.ts",
+      "//default": "./dist/index.mjs"
+    }
+  },
+  "publishConfig": {
+    "exports": {
+      ".": {
+        "default": "./src/index.ts"
+      }
+    }
+  },
+  "dependencies": {
+    "@ittlr-core/composables": "workspace:*",
+    "@ittlr-core/icons": "workspace:*",
+    "@ittlr-core/shared": "workspace:*",
+    "@ittlr-core/typings": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "class-variance-authority": "catalog:",
+    "lucide-vue-next": "catalog:",
+    "radix-vue": "catalog:",
+    "vee-validate": "catalog:",
+    "vue": "catalog:"
+  }
+}
