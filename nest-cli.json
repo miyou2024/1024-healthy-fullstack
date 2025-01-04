@@ -27,6 +27,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/demo-example/tsconfig.app.json"
       }
+    },
+    "nestjs-bootstrap": {
+      "type": "library",
+      "root": "libs/nestjs-bootstrap",
+      "entryFile": "index",
+      "sourceRoot": "libs/nestjs-bootstrap/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/nestjs-bootstrap/tsconfig.lib.json"
+      }
     }
   }
 }
