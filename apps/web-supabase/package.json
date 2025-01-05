@@ -1,0 +1,49 @@
+{
+  "name": "@ittlr/web-supabase",
+  "version": "5.5.2",
+  "homepage": "https://vben.pro",
+  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "directory": "apps/web-naive"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "vben",
+    "email": "ann.vben@gmail.com",
+    "url": "https://github.com/anncwb"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@ittlr/access": "workspace:*",
+    "@ittlr/common-ui": "workspace:*",
+    "@ittlr/constants": "workspace:*",
+    "@ittlr/hooks": "workspace:*",
+    "@ittlr/icons": "workspace:*",
+    "@ittlr/layouts": "workspace:*",
+    "@ittlr/locales": "workspace:*",
+    "@ittlr/plugins": "workspace:*",
+    "@ittlr/preferences": "workspace:*",
+    "@ittlr/request": "workspace:*",
+    "@ittlr/stores": "workspace:*",
+    "@ittlr/styles": "workspace:*",
+    "@ittlr/types": "workspace:*",
+    "@ittlr/utils": "workspace:*",
+    "@vueuse/core": "catalog:",
+    "naive-ui": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  }
+}
