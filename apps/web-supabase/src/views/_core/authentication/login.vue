@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import type { VbenFormSchema } from '@ittlr/common-ui';
-import type { BasicOption } from '@ittlr/types';
-
 import { computed, markRaw } from 'vue';
 
 import { AuthenticationLogin, SliderCaptcha, z } from '@ittlr/common-ui';
@@ -13,63 +11,20 @@ defineOptions({ name: 'Login' });
 
 const authStore = useAuthStore();
 
-const MOCK_USER_OPTIONS: BasicOption[] = [
-  {
-    label: 'Super',
-    value: 'vben',
-  },
-  {
-    label: 'Admin',
-    value: 'admin',
-  },
-  {
-    label: 'User',
-    value: 'jack',
-  },
-];
-
 const formSchema = computed((): VbenFormSchema[] => {
   return [
     {
-      component: 'VbenSelect',
-      componentProps: {
-        options: MOCK_USER_OPTIONS,
-        placeholder: $t('authentication.selectAccount'),
-      },
-      fieldName: 'selectAccount',
-      label: $t('authentication.selectAccount'),
-      rules: z
-        .string()
-        .min(1, { message: $t('authentication.selectAccount') })
-        .optional()
-        .default('vben'),
-    },
-    {
+      defaultValue: 'love@miyou.top',
       component: 'VbenInput',
       componentProps: {
         placeholder: $t('authentication.usernameTip'),
-      },
-      dependencies: {
-        trigger(values, form) {
-          if (values.selectAccount) {
-            const findUser = MOCK_USER_OPTIONS.find(
-              (item) => item.value === values.selectAccount,
-            );
-            if (findUser) {
-              form.setValues({
-                password: '123456',
-                username: findUser.value,
-              });
-            }
-          }
-        },
-        triggerFields: ['selectAccount'],
       },
       fieldName: 'username',
       label: $t('authentication.username'),
       rules: z.string().min(1, { message: $t('authentication.usernameTip') }),
     },
     {
+      defaultValue: '12345678',
       component: 'VbenInputPassword',
       componentProps: {
         placeholder: $t('authentication.password'),
@@ -87,6 +42,7 @@ const formSchema = computed((): VbenFormSchema[] => {
     },
   ];
 });
+
 </script>
 
 <template>

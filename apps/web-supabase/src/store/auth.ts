@@ -1,4 +1,5 @@
 import type { Recordable, UserInfo } from '@ittlr/types';
+import { createClient } from '@supabase/supabase-js'
 
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
@@ -28,6 +29,15 @@ export const useAuthStore = defineStore('auth', () => {
     params: Recordable<any>,
     onSuccess?: () => Promise<void> | void,
   ) {
+    console.log(`supabase.config`, import.meta.env);
+    const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_KEY_CLIENT)
+    console.log(`supabase`, supabase);
+    let { data, error } = await supabase.auth.signInWithPassword({
+      email: 'love@miyou.top',
+      password: '12345678'
+    })
+    console.log('login', data, error);
+
     // 异步处理用户登录操作并获取 accessToken
     let userInfo: null | UserInfo = null;
     try {

@@ -7,13 +7,20 @@ import { computed, h, ref } from 'vue';
 import { AuthenticationRegister, z } from '@ittlr/common-ui';
 import { $t } from '@ittlr/locales';
 
+import { createClient } from '@supabase/supabase-js'
+
 defineOptions({ name: 'Register' });
+
+console.log(`supabase.config`, import.meta.env);
+const supabase = createClient(import.meta.env.VITE_SUPABASE_URL, import.meta.env.VITE_SUPABASE_KEY_CLIENT)
+console.log(`supabase`, supabase);
 
 const loading = ref(false);
 
 const formSchema = computed((): VbenFormSchema[] => {
   return [
     {
+      defaultValue: 'love@miyou.top',
       component: 'VbenInput',
       componentProps: {
         placeholder: $t('authentication.usernameTip'),
@@ -23,6 +30,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.usernameTip') }),
     },
     {
+      defaultValue: '12345678',
       component: 'VbenInputPassword',
       componentProps: {
         passwordStrength: true,
@@ -38,6 +46,7 @@ const formSchema = computed((): VbenFormSchema[] => {
       rules: z.string().min(1, { message: $t('authentication.passwordTip') }),
     },
     {
+      defaultValue: '12345678',
       component: 'VbenInputPassword',
       componentProps: {
         placeholder: $t('authentication.confirmPassword'),
@@ -46,18 +55,19 @@ const formSchema = computed((): VbenFormSchema[] => {
         rules(values) {
           const { password } = values;
           return z
-            .string({ required_error: $t('authentication.passwordTip') })
-            .min(1, { message: $t('authentication.passwordTip') })
-            .refine((value) => value === password, {
-              message: $t('authentication.confirmPasswordTip'),
-            });
+          .string({ required_error: $t('authentication.passwordTip') })
+          .min(1, { message: $t('authentication.passwordTip') })
+          .refine((value) => value === password, {
+            message: $t('authentication.confirmPasswordTip'),
+          });
         },
-        triggerFields: ['password'],
+        triggerFields: [ 'password' ],
       },
       fieldName: 'confirmPassword',
       label: $t('authentication.confirmPassword'),
     },
     {
+      defaultValue: true,
       component: 'VbenCheckbox',
       fieldName: 'agreePolicy',
       renderComponentContent: () => ({
@@ -70,7 +80,7 @@ const formSchema = computed((): VbenFormSchema[] => {
                 class: 'vben-link ml-1',
                 href: '',
               },
-              `${$t('authentication.privacyPolicy')} & ${$t('authentication.terms')}`,
+              `${ $t('authentication.privacyPolicy') } & ${ $t('authentication.terms') }`,
             ),
           ]),
       }),
@@ -81,9 +91,15 @@ const formSchema = computed((): VbenFormSchema[] => {
   ];
 });
 
-function handleSubmit(value: Recordable<any>) {
+async function handleSubmit(value: Recordable<any>) {
   // eslint-disable-next-line no-console
   console.log('register submit:', value);
+
+  let { data, error } = await supabase.auth.signUp({
+    email: value.username,
+    password: value.password
+  });
+  console.log(`handleSubmit`, data, error);
 }
 </script>
 
