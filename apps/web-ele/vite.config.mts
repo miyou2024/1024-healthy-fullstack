@@ -4,8 +4,15 @@ import ElementPlus from 'unplugin-element-plus/vite';
 
 export default defineConfig(async () => {
   return {
-    application: {},
+    application: {
+      archiverPluginOptions: {
+        outputDir: '../../dist/zip/web-ele',
+      }
+    },
     vite: {
+      build: {
+        outDir: '../../dist/apps/web-ele',
+      },
       plugins: [
         ElementPlus({
           format: 'esm',

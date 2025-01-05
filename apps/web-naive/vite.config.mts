@@ -2,8 +2,15 @@ import { defineConfig } from '@ittlr/vite-config';
 
 export default defineConfig(async () => {
   return {
-    application: {},
+    application: {
+      archiverPluginOptions: {
+        outputDir: '../../dist/zip/web-naive',
+      }
+    },
     vite: {
+      build: {
+        outDir: '../../dist/apps/web-naive',
+      },
       server: {
         proxy: {
           '/api': {

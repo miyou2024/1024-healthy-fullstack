@@ -91,7 +91,7 @@ export const shared = defineConfig({
         repoURL: () => 'https://github.com/miyou2024/1024-healthy-web.git',
       }),
       GitChangelogMarkdownSection(),
-      viteArchiverPlugin({ outputDir: '.vitepress' }),
+      viteArchiverPlugin({ outputDir: '../dist/zip/docs' }),
       groupIconVitePlugin(),
       await viteVxeTableImportsPlugin(),
     ],
@@ -107,6 +107,7 @@ export const shared = defineConfig({
       external: ['@vue/repl'],
     },
   },
+  outDir: '../dist/apps/docs',
 });
 
 function head(): HeadConfig[] {
@@ -162,7 +163,7 @@ function pwa(): PwaOptions {
       short_name: 'vben_admin_doc',
       theme_color: '#ffffff',
     },
-    outDir: resolve(process.cwd(), '.vitepress/dist'),
+    outDir: resolve(process.cwd(), '../dist/apps/docs'),
     registerType: 'autoUpdate',
     workbox: {
       globPatterns: ['**/*.{css,js,html,svg,png,ico,txt,woff2}'],

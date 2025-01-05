@@ -19,7 +19,7 @@ export const viteArchiverPlugin = (
 
         setTimeout(async () => {
           const folderToZip = 'dist';
-
+          console.log(`viteArchiverPlugin`, process.cwd(), options);
           const zipOutputDir = join(process.cwd(), outputDir);
           const zipOutputPath = join(zipOutputDir, `${name}.zip`);
           try {

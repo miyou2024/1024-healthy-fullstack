@@ -8,9 +8,9 @@
   "repository": "vbenjs/vue-vben-admin.git",
   "license": "MIT",
   "author": {
-    "name": "vben",
-    "email": "ann.vben@gmail.com",
-    "url": "https://github.com/anncwb"
+    "name": "miyou2024",
+    "email": "love@miyou.top",
+    "url": "https://github.com/miyou2024"
   },
   "scripts": {
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 turbo build",
@@ -21,8 +21,8 @@
     "build:web:ele": "pnpm run build --filter=@ittlr/web-ele",
     "build:web:naive": "pnpm run build --filter=@ittlr/web-naive",
     "build:web:play": "pnpm run build --filter=@ittlr/playground",
-    "build:nest:nest-app": "nest build nest-app",
-    "preview:nest:nest-app": "node dist/apps/nest-app/main",
+    "build:nest:nest-example": "nest build nest-example",
+    "preview:nest:nest-example": "node dist/example/nest-example/main",
     "clean": "node ./scripts/clean.mjs",
     "dev": "turbo-run dev",
     "dev:web:antd": "pnpm -F @ittlr/web-antd run dev",
@@ -30,12 +30,12 @@
     "dev:web:ele": "pnpm -F @ittlr/web-ele run dev",
     "dev:web:naive": "pnpm -F @ittlr/web-naive run dev",
     "dev:web:play": "pnpm -F @ittlr/playground run dev",
-    "dev:nest:nest-app": "nest start --watch",
-    "debug:nest:nest-app": "nest start --watch --debug",
+    "dev:nest:nest-example": "nest start nest-example --watch",
+    "debug:nest:nest-example": "nest start nest-example --watch --debug",
     "preview": "turbo-run preview",
     "reinstall": "pnpm clean --del-lock && pnpm install",
     "test:unit": "vitest run --dom",
-    "test:e2e": "turbo run test:e2e",
+    "test:e2e": "turbo run apps/vben-admin-monorepo/test:e2e",
     "update:deps": "npx taze -r -w"
   },
   "devDependencies": {
