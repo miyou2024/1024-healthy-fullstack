@@ -1,0 +1,5 @@
+server:
+  nodeEnv: development
+  cloudEnv: local
+  tmpToken: local_tmp_token
+
