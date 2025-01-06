@@ -29,6 +29,7 @@ package-lock.json
 .env.*.local
 .eslintcache
 .env.supabase
+config.yaml
 
 logs
 *.log
