@@ -19,7 +19,7 @@ hero:
       link: https://www.vben.pro
     - theme: alt
       text: 在 GitHub 查看
-      link: https://github.com/miyou2024/1024-healthy-web.git
+      link: https://github.com/miyou2024/1024-healthy-fullstack.git
 
 features:
   - icon: 🚀

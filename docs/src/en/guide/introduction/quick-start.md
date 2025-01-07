@@ -32,7 +32,7 @@ git -v
 
 ```bash [GitHub]
 # Clone the code
-git clone https://github.com/miyou2024/1024-healthy-web.git.git
+git clone https://github.com/miyou2024/1024-healthy-fullstack.git.git
 ```
 
 ```bash [Gitee]

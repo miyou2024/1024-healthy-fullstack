@@ -32,7 +32,7 @@ git -v
 
 ```sh [GitHub]
 # clone 代码
-git clone https://github.com/miyou2024/1024-healthy-web.git.git
+git clone https://github.com/miyou2024/1024-healthy-fullstack.git.git
 ```
 
 ```sh [Gitee]

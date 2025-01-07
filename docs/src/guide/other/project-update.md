@@ -19,7 +19,7 @@
 1. 克隆代码
 
 ```bash
-git clone https://github.com/miyou2024/1024-healthy-web.git.git
+git clone https://github.com/miyou2024/1024-healthy-fullstack.git.git
 ```
 
 2. 添加自己的公司 git 源地址

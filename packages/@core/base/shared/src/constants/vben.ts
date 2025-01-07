@@ -1,7 +1,7 @@
 /**
  * @zh_CN GITHUB 仓库地址
  */
-export const VBEN_GITHUB_URL = 'https://github.com/miyou2024/1024-healthy-web.git';
+export const VBEN_GITHUB_URL = 'https://github.com/miyou2024/1024-healthy-fullstack.git';
 
 /**
  * @zh_CN 文档地址

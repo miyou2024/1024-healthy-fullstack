@@ -19,7 +19,7 @@ It is recommended to follow the repository updates actively and merge them; do n
 1. Clone the code
 
 ```bash
-git clone https://github.com/miyou2024/1024-healthy-web.git.git
+git clone https://github.com/miyou2024/1024-healthy-fullstack.git.git
 ```
 
 2. Add your company's git source address

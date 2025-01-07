@@ -16,7 +16,7 @@ export const zh = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/miyou2024/1024-healthy-web/edit/main/docs/src/:path',
+        'https://github.com/miyou2024/1024-healthy-fullstack/edit/main/docs/src/:path',
       text: '在 GitHub 上编辑此页面',
     },
     footer: {
@@ -263,7 +263,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/miyou2024/1024-healthy-web/releases',
+          link: 'https://github.com/miyou2024/1024-healthy-fullstack/releases',
           text: '更新日志',
         },
         {
@@ -271,7 +271,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: '路线图',
         },
         {
-          link: 'https://github.com/miyou2024/1024-healthy-web/blob/main/.github/contributing.md',
+          link: 'https://github.com/miyou2024/1024-healthy-fullstack/blob/main/.github/contributing.md',
           text: '贡献',
         },
       ],

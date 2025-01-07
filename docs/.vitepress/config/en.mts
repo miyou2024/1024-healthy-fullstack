@@ -16,7 +16,7 @@ export const en = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/miyou2024/1024-healthy-web/edit/main/docs/src/:path',
+        'https://github.com/miyou2024/1024-healthy-fullstack/edit/main/docs/src/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {
@@ -198,7 +198,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/miyou2024/1024-healthy-web/releases',
+          link: 'https://github.com/miyou2024/1024-healthy-fullstack/releases',
           text: 'Changelog',
         },
         {
@@ -206,7 +206,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Roadmap',
         },
         {
-          link: 'https://github.com/miyou2024/1024-healthy-web/blob/main/.github/contributing.md',
+          link: 'https://github.com/miyou2024/1024-healthy-fullstack/blob/main/.github/contributing.md',
           text: 'Contribution',
         },
       ],

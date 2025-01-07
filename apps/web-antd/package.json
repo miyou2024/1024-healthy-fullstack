@@ -2,10 +2,10 @@
   "name": "@ittlr/web-antd",
   "version": "5.5.2",
   "homepage": "https://vben.pro",
-  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "bugs": "https://github.com/miyou2024/1024-healthy-fullstack/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-fullstack.git.git",
     "directory": "apps/web-antd"
   },
   "license": "MIT",

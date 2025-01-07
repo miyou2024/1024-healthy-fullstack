@@ -4,5 +4,5 @@
 
 在使用项目的过程中，如果遇到问题，你可以先详细阅读本文档，未找到解决方案时，可以通过以下方式获取技术支持：
 
-- 通过 [GitHub Issues](https://github.com/miyou2024/1024-healthy-web/issues)
-- 通过 [GitHub Discussions](https://github.com/miyou2024/1024-healthy-web/discussions)
+- 通过 [GitHub Issues](https://github.com/miyou2024/1024-healthy-fullstack/issues)
+- 通过 [GitHub Discussions](https://github.com/miyou2024/1024-healthy-fullstack/discussions)

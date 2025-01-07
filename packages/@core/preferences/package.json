@@ -1,11 +1,11 @@
 {
   "name": "@ittlr-core/preferences",
   "version": "5.5.2",
-  "homepage": "https://github.com/miyou2024/1024-healthy-web.git",
-  "bugs": "https://github.com/miyou2024/1024-healthy-web/issues",
+  "homepage": "https://github.com/miyou2024/1024-healthy-fullstack.git",
+  "bugs": "https://github.com/miyou2024/1024-healthy-fullstack/issues",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miyou2024/1024-healthy-web.git.git",
+    "url": "git+https://github.com/miyou2024/1024-healthy-fullstack.git.git",
     "directory": "packages/@core/preferences"
   },
   "license": "MIT",

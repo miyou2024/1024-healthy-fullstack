@@ -46,7 +46,7 @@ export const shared = defineConfig({
     },
     siteTitle: 'Vben Admin',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/miyou2024/1024-healthy-web.git' },
+      { icon: 'github', link: 'https://github.com/miyou2024/1024-healthy-fullstack.git' },
     ],
   },
   title: 'Vben Admin',
@@ -88,7 +88,7 @@ export const shared = defineConfig({
             username: 'likui628',
           },
         ],
-        repoURL: () => 'https://github.com/miyou2024/1024-healthy-web.git',
+        repoURL: () => 'https://github.com/miyou2024/1024-healthy-fullstack.git',
       }),
       GitChangelogMarkdownSection(),
       viteArchiverPlugin({ outputDir: '../dist/zip/docs' }),
