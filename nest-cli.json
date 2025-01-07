@@ -27,6 +27,15 @@
       "compilerOptions": {
         "tsConfigPath": "apps/nest-example/tsconfig.app.json"
       }
+    },
+    "nestjs-passport": {
+      "type": "library",
+      "root": "libs/nestjs-passport",
+      "entryFile": "index",
+      "sourceRoot": "libs/nestjs-passport/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/nestjs-passport/tsconfig.lib.json"
+      }
     }
   }
 }

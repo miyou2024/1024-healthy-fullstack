@@ -24,6 +24,12 @@
       ],
       "@ittlr/nestjs-bootstrap/*": [
         "libs/nestjs-bootstrap/src/*"
+      ],
+      "@ittlr/nestjs-passport": [
+        "libs/nestjs-passport/src"
+      ],
+      "@ittlr/nestjs-passport/*": [
+        "libs/nestjs-passport/src/*"
       ]
     }
   }
